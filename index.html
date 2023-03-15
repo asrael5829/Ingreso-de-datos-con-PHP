@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="formulario">
+    <form action="formu.php" method="POST">
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Ingresar nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Ingresar contraseña" name="password" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="genero" value="F" required>Femenino
+                    <input type="radio" name="genero" value="M" required>Masculino
+                </td>
+            </tr>
+            <tr>
+                <td><input type="mail" placeholder="Ingrese Correo" name="email" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <select class="seleccion" name="materia" required>
+                        <option selected hidden value="">Materias</option>
+                        <option value="calculo">Calculo</option>
+                        <option value="fisica">Fisica</option>
+                        <option value="programacion">Programacion</option>
+                        <option value="database">Base de Datos</option>
+                        <option value="analisis">Analisis de Sistemas</option>
+                    </select>
+                    <input type="phone" name="telefono" placeholder="Ingrese su numero" required>
+                </td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="ENVIAR" name="enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
